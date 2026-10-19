@@ -9,14 +9,14 @@ Mode: Persuade.
 
 ## Direction contract
 
-THESIS: Orientação previdenciária com clareza e atenção à história de cada pessoa. A estrutura e os comportamentos existentes são preservados conforme o pedido.
+THESIS: “Seu direito começa com informação.” Apresentar uma advogada acessível e uma atuação previdenciária clara, mantendo a estrutura e as funcionalidades solicitadas.
 
-OWN-WORLD: O dourado médio #d8a848, a luz #fce478 e o bronze #9c6c24 vêm dos agrupamentos de pixels opacos do logo. Fundos castanhos quase pretos e marfim derivam dessas cores. Libre Caslon Display acompanha as capitulares romanas, serifas e proporções do wordmark; Manrope garante leitura em textos e controles.
+OWN-WORLD: Prata e grafite amostrados do logo; azul-petróleo da peça institucional. Fundos frios claros para leitura, campos escuros para marca e retrato, serifas romanas Marcellus e Manrope nos textos e controles. Linhas discretas e formas retas.
 
-STORY: Reconhecer as advogadas, localizar aposentadorias, BPC/LOAS, TEA, incapacidade e Cível, entender o atendimento e iniciar uma conversa pelo WhatsApp.
+STORY: Conhecer Fabiana Mota em Araxá, identificar aposentadoria, BPC, incapacidade ou pensão, entender o atendimento, consultar relatos reais e iniciar a conversa no WhatsApp.
 
-FIRST VIEWPORT: Cabeçalho escuro com logo integral. Hero escuro, título claro e dourado, CTA dourado e duas fotografias integrais à direita. No celular, fotos abaixo do texto; nenhuma atribuição individual de nome sem confirmação.
+FIRST VIEWPORT: Logo integral no cabeçalho escuro. Chamada clara e CTA prateado à esquerda, retrato real integral à direita com legenda identificada. No celular, retrato abaixo da ação. A revelação suave do retrato é o único gesto de entrada; conteúdo visível por padrão.
 
-FORM: Identidade fixada pelo logo e pelo briefing; adaptação da composição existente. Sem rodada de escolha, sem substituir a estrutura solicitada.
+FORM: Direção fixada pelo briefing e anexos, preservando a composição existente. Sem sorteio ou rodada de escolha; implementação em código conforme configuração do projeto.
 
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance

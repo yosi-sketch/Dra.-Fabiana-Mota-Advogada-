@@ -1,54 +1,66 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T17:39:21.252Z",
-  "title": "Design System: Cristiane & Kathia — Advocacia Previdenciária",
+  "generatedAt": "2026-10-19T11:16:18.237Z",
+  "title": "Design System: Dra. Fabiana Mota — Advocacia Previdenciária",
   "extensions": {
     "colorMeta": {
-      "gold": {
+      "silver": {
         "role": "primary",
-        "displayName": "Ouro do emblema",
-        "canonical": "#d8a848",
+        "displayName": "Prata do logo",
+        "canonical": "#d0cbc4",
         "tonalRamp": [
-          "#fbf5e8",
-          "#efe0bd",
-          "#e7cd91",
-          "#e4bb66",
-          "#d8a848",
-          "#c29137",
-          "#9c6c24",
-          "#75501b",
-          "#604116"
+          "#f9f8f7",
+          "#d0cbc4",
+          "#2b3236"
         ]
       },
       "ink": {
         "role": "neutral",
-        "displayName": "Castanho profundo",
-        "canonical": "#211b14",
+        "displayName": "Grafite do logo",
+        "canonical": "#2b3236",
         "tonalRamp": [
-          "#211b14",
-          "#30261a",
-          "#675b4b",
-          "#ded2be",
-          "#eee7d9",
-          "#f8f5ee",
-          "#fffdf8"
+          "#101f28",
+          "#2b3236",
+          "#4c606c",
+          "#c4d1d8",
+          "#e7edf0",
+          "#f4f6f7",
+          "#f9f8f7"
+        ]
+      },
+      "brand-900": {
+        "role": "secondary",
+        "displayName": "Petróleo institucional",
+        "canonical": "#043b54",
+        "tonalRamp": [
+          "#edf2f4",
+          "#dce4e8",
+          "#bfcbd1",
+          "#d0cbc4",
+          "#8199a5",
+          "#5d7b89",
+          "#37677b",
+          "#245970",
+          "#124a60",
+          "#043b54",
+          "#101f28"
         ]
       }
     },
     "typographyMeta": {
-      "display": {
-        "displayName": "Libre Caslon Display",
-        "purpose": "Serifas romanas próximas às letras do logo; peso nativo 400."
+      "display-mobile": {
+        "displayName": "Marcellus",
+        "purpose": "Serifas romanas e proporções próximas do logo, peso400."
       },
       "body": {
         "displayName": "Manrope",
-        "purpose": "Leitura clara em textos, navegação e controles."
+        "purpose": "Leitura e operação dos controles, pesos400–600."
       }
     },
     "shadows": [
       {
         "name": "dialog",
-        "value": "0 18px 48px rgb(33 27 20 / 18%)",
+        "value": "0 18px 48px rgb(16 31 40 / 18%)",
         "purpose": "Separação estrutural do diálogo."
       }
     ],
@@ -56,22 +68,17 @@
       {
         "name": "signature-reveal",
         "value": "900ms cubic-bezier(0.16, 1, 0.3, 1)",
-        "purpose": "Revelação única por clip-path das fotografias; desativada com movimento reduzido."
+        "purpose": "Revelação por clip-path do retrato já visível; desativada com movimento reduzido."
       },
       {
-        "name": "navigation",
-        "value": "180ms ease",
-        "purpose": "Cor e sublinhado da navegação."
-      },
-      {
-        "name": "button",
-        "value": "200ms",
-        "purpose": "Transição de cor do botão compartilhado."
+        "name": "state",
+        "value": "180–240ms ease",
+        "purpose": "Estados de navegação e controles."
       }
     ],
     "breakpoints": [
       {
-        "name": "compact-logo",
+        "name": "logo-small",
         "value": "360px"
       },
       {
@@ -86,85 +93,80 @@
         "name": "lg",
         "value": "1024px"
       }
-    ],
-    "borders": [
-      {
-        "name": "footer-divider",
-        "value": "1px solid rgb(222 210 190 / 25%)",
-        "purpose": "Divisor translúcido derivado de dark-text."
-      }
-    ],
-    "focus": [
-      {
-        "name": "light-surface",
-        "value": "2px solid #75501b; outline-offset: 4px",
-        "purpose": "Foco em superfícies claras."
-      },
-      {
-        "name": "dark-surface",
-        "value": "2px solid #d8a848; outline-offset: 4px",
-        "purpose": "Foco em fundos escuros."
-      }
     ]
   },
   "components": [
     {
-      "name": "Primary Button",
+      "name": "Botão em fundo claro",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Ação principal sobre superfície clara.",
-      "html": "<button class=\"ds-button\">Fale com as advogadas</button>",
-      "css": ".ds-button { min-height:44px; background:var(--color-brand-800); color:#fff; border:1px solid var(--color-brand-800); padding:14px 24px; font-family:Manrope,system-ui,sans-serif; font-weight:600; border-radius:0; transition:background 200ms; } .ds-button:hover { background:var(--color-brand-700); } .ds-button:focus-visible { outline:2px solid var(--color-brand-700); outline-offset:4px; }"
+      "description": "Contato principal sobre superfícies claras.",
+      "html": "<button class=\"ds-primary\">Fale com a Dra. Fabiana</button>",
+      "css": ".ds-primary{font-family:var(--font-sans,Manrope,system-ui,sans-serif);min-height:44px;padding:14px 24px;border:1px solid var(--color-brand-800,#124a60);border-radius:0;background:var(--color-brand-800,#124a60);color:#fff;font-size:14px;font-weight:600;cursor:pointer;transition:background .2s}.ds-primary:hover{background:var(--color-brand-700,#245970)}.ds-primary:focus-visible{outline:2px solid var(--color-brand-700,#245970);outline-offset:4px;}"
     },
     {
-      "name": "Button on Dark",
+      "name": "Botão em fundo escuro",
       "kind": "button",
       "refersTo": "button-on-dark",
-      "description": "Contato destacado nos contextos escuros.",
-      "html": "<div class=\"ds-dark\"><button>Fale com as advogadas</button></div>",
-      "css": ".ds-dark { background:var(--color-ink); padding:24px; } .ds-dark button { min-height:44px; border:1px solid var(--color-gold); background:var(--color-gold); color:var(--color-ink); padding:16px 20px; font-family:Manrope,system-ui,sans-serif; font-weight:600; border-radius:0; } .ds-dark button:hover { background:var(--color-brand-100); border-color:var(--color-brand-100); } .ds-dark button:focus-visible { outline:2px solid var(--color-gold); outline-offset:4px; }"
+      "description": "Ação prateada sobre petróleo ou grafite.",
+      "html": "<div class=\"ds-dark-surface\"><button class=\"ds-silver\">Fale com a Dra. Fabiana</button></div>",
+      "css": ".ds-dark-surface{padding:24px;background:var(--color-brand-950,#101f28)}.ds-silver{font-family:var(--font-sans,Manrope,system-ui,sans-serif);min-height:44px;padding:16px 20px;background:var(--color-silver,#d0cbc4);color:var(--color-brand-950,#101f28);border:1px solid var(--color-silver,#d0cbc4);border-radius:0;font-size:14px;font-weight:600;cursor:pointer;transition:background .2s}.ds-silver:hover{background:var(--color-brand-100,#dce4e8)}.ds-silver:focus-visible{outline:2px solid var(--color-silver,#d0cbc4);outline-offset:4px}"
     },
     {
-      "name": "Navigation",
+      "name": "Navegação",
       "kind": "nav",
       "refersTo": "navigation",
-      "description": "Navegação clara sobre fundo escuro, com sublinhado no hover e foco visível.",
-      "html": "<nav class=\"ds-nav\"><a href=\"#inicio\">Início</a><a href=\"#atuacao\">Atendimento</a><a href=\"#contato\">Contato</a></nav>",
-      "css": ".ds-nav { display:flex; flex-wrap:wrap; gap:28px; background:var(--color-brand-950); padding:24px; font:600 14px/1.5 Manrope,system-ui,sans-serif; } .ds-nav a { color:var(--color-brand-100); padding:12px 0; text-decoration:none; } .ds-nav a:hover { color:var(--color-gold); text-decoration:underline; text-underline-offset:8px; } .ds-nav a:focus-visible { outline:2px solid var(--color-gold); outline-offset:4px; }"
+      "description": "Links claros em cabeçalho escuro.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Exemplo de navegação\"><a href=\"#inicio\">Início</a><a href=\"#atuacao\">Atendimento</a><a href=\"#contato\">Contato</a></nav>",
+      "css": ".ds-nav{font-family:var(--font-sans,Manrope,system-ui,sans-serif);display:flex;flex-wrap:wrap;gap:28px;padding:16px 24px;background:var(--color-brand-950,#101f28)}.ds-nav a{display:inline-flex;align-items:center;min-height:44px;color:var(--color-brand-100,#dce4e8);font-size:14px;font-weight:600;text-decoration:none}.ds-nav a:hover{color:var(--color-silver,#d0cbc4);text-decoration:underline;text-underline-offset:8px}.ds-nav a:focus-visible{outline:2px solid var(--color-silver,#d0cbc4);outline-offset:4px}"
     },
     {
-      "name": "Address Panel",
-      "kind": "card",
-      "description": "Contato e localização em painel claro com borda discreta.",
-      "html": "<section class=\"ds-address\"><h3>Nosso escritório em Brasília de Minas</h3><p>Rua Cap. Bernadino, 36 — Brasília de Minas, MG</p></section>",
-      "css": ".ds-address { background:#fff; color:var(--color-ink); border:1px solid rgb(33 27 20 / 10%); padding:28px; border-radius:0; } .ds-address h3 { font:400 24px/1.3 var(--font-display); margin:0 0 24px; } .ds-address p { font:400 14px/2 Manrope,system-ui,sans-serif; color:var(--color-ink-soft); }"
-    },
-    {
-      "name": "Service Dialog",
+      "name": "Detalhes de atendimento",
       "kind": "custom",
       "refersTo": "dialog",
-      "description": "Detalhes do serviço em superfície marfim; foco e fechamento controlados pela aplicação.",
-      "html": "<section class=\"ds-dialog\"><h2>Aposentadorias</h2><p>Análise individual da sua trajetória profissional e dos documentos disponíveis.</p></section>",
-      "css": ".ds-dialog { background:var(--color-ivory); color:var(--color-ink); padding:28px; border-radius:4px 4px 0 0; box-shadow:0 18px 48px rgb(33 27 20 / 18%); } .ds-dialog h2 { font:400 27.2px/1.25 var(--font-display); letter-spacing:-0.025em; margin:16px 0 20px; } .ds-dialog p { font:400 14px/2 Manrope,system-ui,sans-serif; color:var(--color-ink-soft); }"
+      "description": "Superfície de leitura dos diálogos de serviços.",
+      "html": "<section class=\"ds-dialog\" aria-label=\"Exemplo de detalhes\"><h2>Aposentadorias</h2><p>Seu histórico de trabalho merece uma análise cuidadosa.</p><a href=\"#contato\">Conversar sobre este atendimento</a></section>",
+      "css": ".ds-dialog{font-family:var(--font-sans,Manrope,system-ui,sans-serif);max-width:576px;padding:28px;background:var(--color-mist,#f4f6f7);color:var(--color-ink,#2b3236);border-radius:4px 4px 0 0;box-shadow:0 18px 48px rgb(16 31 40 / 18%)}.ds-dialog h2{font-family:var(--font-display,Marcellus,Georgia,serif);font-size:1.7rem;font-weight:400;letter-spacing:-.025em;line-height:1.25}.ds-dialog p{font-size:14px;line-height:28px;color:var(--color-ink-soft,#4c606c)}.ds-dialog a{display:inline-flex;align-items:center;min-height:44px;color:var(--color-brand-700,#245970);font-size:14px}.ds-dialog a:hover{text-underline-offset:4px}.ds-dialog a:focus-visible{outline:2px solid var(--color-brand-700,#245970);outline-offset:4px;}"
+    },
+    {
+      "name": "Pergunta frequente",
+      "kind": "custom",
+      "description": "Expansão nativa acessível por teclado.",
+      "html": "<details class=\"ds-faq\"><summary>Como agendar uma consulta?</summary><p>Fale com a Dra. Fabiana pelo WhatsApp ou por telefone.</p></details>",
+      "css": ".ds-faq{font-family:var(--font-sans,Manrope,system-ui,sans-serif);padding:24px 0;border-block:1px solid rgb(43 50 54 / 15%);color:var(--color-ink,#2b3236)}.ds-faq summary{min-height:44px;font-size:16px;font-weight:600;cursor:pointer}.ds-faq summary::marker{color:var(--color-brand-700,#245970)}.ds-faq summary:hover{color:var(--color-brand-700,#245970)}.ds-faq summary:focus-visible{outline:2px solid var(--color-brand-700,#245970);outline-offset:4px;}.ds-faq p{font-size:14px;line-height:28px;color:var(--color-ink-soft,#4c606c)}"
     }
   ],
   "narrative": {
-    "northStar": "Cuidado com a sua história",
-    "overview": "Ouro e bronze extraídos do emblema, sobre castanho profundo e marfim. Serifas romanas e fotografias integrais unem identidade e proximidade.",
+    "northStar": "Seu direito começa com informação.",
+    "overview": "Prata, grafite e branco extraídos do logo, com petróleo da peça institucional. Marcellus acompanha as serifas romanas; Manrope sustenta a leitura. Imagens reais integrais, formas retas e contraste claro/escuro.",
     "keyCharacteristics": [
-      "Logo original sobre fundo escuro",
-      "Fotos integrais sem identificação individual presumida",
-      "Libre Caslon Display e Manrope",
-      "Controles planos e contraste verificado"
+      "Logo original integral",
+      "Prata e grafite amostrados",
+      "Petróleo institucional",
+      "Serifas romanas e leitura clara",
+      "Teclado e movimento reduzido"
+    ],
+    "rules": [
+      {
+        "name": "Regra do contraste",
+        "body": "Prata em contexto escuro; petróleo escuro para ações em contexto claro.",
+        "section": "colors"
+      },
+      {
+        "name": "Regra do logo",
+        "body": "Preservar pixels, transparência e proporção3:1 sobre fundo escuro.",
+        "section": "colors"
+      }
     ],
     "dos": [
-      "Preservar anexos e proporções",
-      "Usar ouro sobre escuro e bronze sobre claro",
-      "Manter teclado e movimento reduzido"
+      "Do preservar os anexos reais e suas proporções.",
+      "Do centralizar tokens em app/globals.css.",
+      "Do manter foco visível e alvos de toque."
     ],
     "donts": [
-      "Não inventar dados, credenciais ou relatos",
-      "Não aplicar dourado claro em texto pequeno sobre marfim"
+      "Don’t inventar credenciais, canais ou resultados.",
+      "Don’t atribuir o petróleo ao logo.",
+      "Don’t exigir animação para acessar conteúdo."
     ]
   }
 }

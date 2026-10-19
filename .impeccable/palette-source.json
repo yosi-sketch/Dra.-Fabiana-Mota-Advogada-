@@ -1,27 +1,31 @@
 {
-  "source": "public/cristiane-kathia-logo.png",
-  "method": "Pixels com alpha >= 220, R >= 60, R > G × 1.05, G > B × 1.2, agrupados por canal em intervalos de 12; transparência ignorada.",
-  "sampled": {
-    "lightGold": {
-      "hex": "#fce478",
-      "pixelCount": 7683
+  "brand": "Dra. Fabiana Mota",
+  "method": "Média de pixels do logo com alpha >= 240, diferença máxima entre canais 25; agrupamentos por luminosidade. Azul secundário: pixel de fundo da peça institucional.",
+  "groups": [
+    {
+      "name": "graphite",
+      "min": 25,
+      "max": 85,
+      "count": 17494,
+      "representative": "#2b3236"
     },
-    "gold": {
-      "hex": "#d8a848",
-      "pixelCount": 3422
+    {
+      "name": "silver",
+      "min": 185,
+      "max": 220,
+      "count": 35801,
+      "representative": "#d0cbc4"
     },
-    "bronze": {
-      "hex": "#9c6c24",
-      "pixelCount": 3382
+    {
+      "name": "white",
+      "min": 230,
+      "max": 256,
+      "count": 64243,
+      "representative": "#f9f8f7"
     }
-  },
-  "derived": {
-    "dark": "#211b14",
-    "darkSurface": "#30261a",
-    "textOnLight": "#675b4b",
-    "accessibleBronze": "#75501b",
-    "ivory": "#f8f5ee",
-    "paper": "#fffdf8"
-  },
-  "typographyReason": "Libre Caslon Display: capitulares romanas, serifas marcadas e proporções próximas ao wordmark. Manrope: contraste de função e legibilidade em textos e controles."
+  ],
+  "bannerBackground": "#043b54",
+  "cssSilver": "#d0cbc4",
+  "cssPetrol": "#043b54",
+  "note": "Tokens de superfícies, texto e escala azul são variações tonais para contraste; o azul tem origem na peça institucional, não no logo."
 }

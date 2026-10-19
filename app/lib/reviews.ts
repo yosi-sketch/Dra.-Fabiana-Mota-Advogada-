@@ -1,28 +1,28 @@
-// Trechos literais das avaliações do Google fornecidas pelo cliente em 18/10/2026.
-// As notas individuais e os links de cada avaliação não constam no material.
+// Trechos literais das avaliações do Google fornecidas em 19/10/2026.
+// Não foram fornecidas notas individuais ou links de cada avaliação.
 export const googleReviews = [
   {
-    author: "Regiane Mendes",
-    excerpt: "Excelente atendimento, profissionais atenciosas e muito competentes. Fui muito bem orientada por Dra Cristiane e Dra Kathia em todo o processo, com clareza, respeito e dedicação.",
+    author: "Leiliane Alves",
+    excerpt: "Profissional excepcional! A Dra. Fabiana me atendeu com muita atenção, empatia e profissionalismo durante todo o processo de aposentadoria e pensão. Sempre esteve disponível para tirar dúvidas e conduziu tudo com clareza e eficiência.",
   },
   {
-    author: "Euza Alves Moreira",
-    excerpt: "Atendimento personalizado, escritório acolhedor e uma equipe pronta para atender com atenção e carinho.",
+    author: "Maria Jose de Oliveira Fontoura",
+    excerpt: "Ótima profissional. Sempre disposta a ajudar, tem muito conhecimento na sua área. Verdadeira quando se tem chance ou não de ganhar uma causa para seu cliente.",
   },
   {
-    author: "Mariuza Batista de Oliveira",
-    excerpt: "Escritório de advocacia superou as minhas expectativas. Atendimento humanizado e diferenciado pela atenção e conhecimento jurídico. Super indico.",
+    author: "Elenice Simoes",
+    excerpt: "Achei a Fabiana super eficiente, prestativa..Conhecedora das leis do INSS. Sou muito grata à ela.",
   },
   {
-    author: "Ronaldo Mendes",
-    excerpt: "Advogada humana, atenciosa e muito dedicada. Apresenta conhecimento jurídico nos seus serviços profissionais que remete a confiança e segurança. Muito satisfeito.",
+    author: "Anne Silva",
+    excerpt: "Atendimento muito bom , bem atenciosa uma excelente profissional.",
   },
   {
-    author: "Mônica Botelho Rocha",
-    excerpt: "Excelentes advogadas. Profissionais, confiável, sempre disponível, esclarece bem as dúvidas, atenciosas e são ótimas pessoas.",
+    author: "Abadia Alice",
+    excerpt: "É uma advogada atenciosa e competente, a minha experiência foi ótima.",
   },
   {
-    author: "Mauricio Nunes",
-    excerpt: "Serviço excelente! Fui muito bem assessorado, com atenção aos detalhes e eficiência.",
+    author: "Suelen Keiko",
+    excerpt: "Excelente advogada , super atenciosa e prestativa",
   },
 ] as const;

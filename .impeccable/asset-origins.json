@@ -1,35 +1,33 @@
-[
-  {
-    "path": "public/cristiane-kathia-logo.png",
-    "origin": "C:/Users/matheus/Downloads/Emblema Dourado de Advocacia Luxuosa.png",
-    "width": 2172,
-    "height": 724,
-    "transformation": "Cópia integral do anexo; somente metadados de origem adicionados. Pixels idênticos ao original.",
-    "sha256": "acf943b46f9ebaee4592920cc643fedd8696fa6b21c6d52daa1d0a83a390400b",
-    "sourceSha256": "8f86f807ebe845670fdeb4b8ccd5774741742a5f407c205ca9bf4a34e80d0030",
-    "identicalToSource": false,
-    "identicalPixels": true
-  },
-  {
-    "path": "public/cristiane-kathia-institucional.png",
-    "origin": "C:/Users/matheus/AppData/Local/Temp/codex-clipboard-bfef0e9b-f105-40f2-b17f-b593cada7f5f.png",
-    "width": 341,
-    "height": 510,
-    "transformation": "Cópia integral do anexo; somente metadados de origem adicionados. Pixels idênticos ao original.",
-    "sha256": "65253ac5f172c13353653f041b0e63a3d9f9a88640cf0350c4d57483a0f3a63a",
-    "sourceSha256": "4bdd6b9258e26fc8156207d50ff547d80aaa0e340244224c61ae62d35a026242",
-    "identicalToSource": false,
-    "identicalPixels": true
-  },
-  {
-    "path": "public/cristiane-kathia-retrato.png",
-    "origin": "C:/Users/matheus/AppData/Local/Temp/codex-clipboard-b9ea250d-a881-4edd-9733-421abced573a.png",
-    "width": 287,
-    "height": 510,
-    "transformation": "Cópia integral do anexo; somente metadados de origem adicionados. Pixels idênticos ao original.",
-    "sha256": "f080424053e60d44255a86664f290c4fb5e4546351727f701fae665198a97a2b",
-    "sourceSha256": "9b6eb5f407ccc0b8b3c3220cac3ac9e7374bd797434dc40dc1945503408403ce",
-    "identicalToSource": false,
-    "identicalPixels": true
-  }
-]
+{
+  "brand": "Dra. Fabiana Mota",
+  "providedOn": "2026-10-19",
+  "assets": [
+    {
+      "file": "public/fabiana-mota-logo.png",
+      "origin": "C:/Users/matheus/Downloads/Logotipo Jurídico FABIANA MOTA.png",
+      "description": "Logo original, cópia integral, transparência e proporções preservadas.",
+      "width": 2172,
+      "height": 724,
+      "sha256": "1d7f37fcf5bb27381483bd88434ff40933f81e426770c31df09ebcde9053a14f",
+      "note": "Proveniência incorporada aos metadados; pixels do original preservados."
+    },
+    {
+      "file": "public/fabiana-mota-institucional.png",
+      "origin": "C:/Users/matheus/AppData/Local/Temp/codex-clipboard-6fea6e70-9349-4d20-9a93-b9b1d5239055.png",
+      "description": "Peça institucional original fornecida no briefing, cópia integral.",
+      "width": 680,
+      "height": 192,
+      "sha256": "9cbbcdee1fd150a781a192cb87ab13958981755b84673b5a81554fb0b49cb6ab",
+      "note": "Proveniência incorporada aos metadados; pixels do original preservados."
+    },
+    {
+      "file": "public/fabiana-mota-retrato.jpg",
+      "origin": "C:/Users/matheus/Downloads/fsasda/Instagram (1).zip#imgi_19_503288694_1216345149582600_8284506846455444391_n.jpg",
+      "description": "Retrato real extraído do ZIP, sem corte ou retoque.",
+      "width": 1170,
+      "height": 2080,
+      "sha256": "06b4e6c9dda3cc30e74e74997305b5f9fcc8bdc07dcbf4e8946709e31dfc43f1",
+      "note": "Proveniência incorporada aos metadados; pixels do original preservados."
+    }
+  ]
+}

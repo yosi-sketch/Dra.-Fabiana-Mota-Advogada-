@@ -1,35 +1,35 @@
 @import "tailwindcss";
 
-/* Tailwind 4: tokens centralizados. Dourado #d8a848 e bronze #9c6c24
-   amostrados do logo; marfim e tons escuros são variações da mesma família. */
+/* Tailwind 4: prata e grafite do logo, azul-petróleo da peça institucional.
+   A escala tonal e seus pares de contraste constam em DESIGN.md. */
 :root {
   color-scheme: light;
-  --brand-ink: #211b14;
-  --brand-ink-soft: #675b4b;
-  --brand-paper: #f8f5ee;
+  --brand-ink: var(--color-ink);
+  --brand-ink-soft: var(--color-ink-soft);
+  --brand-paper: var(--color-mist);
 }
 @theme inline {
-  --font-display: var(--font-display-face), "Libre Caslon Display", Georgia, serif;
+  --font-display: var(--font-display-face), "Marcellus", Georgia, serif;
   --font-sans: var(--font-body), "Manrope", system-ui, sans-serif;
-  --color-ink: #211b14;
-  --color-ink-soft: #675b4b;
-  --color-paper: #fffdf8;
-  --color-ivory: #f8f5ee;
-  --color-linen: #eee7d9;
-  --color-gold: #d8a848;
-  --color-dark-text: #ded2be;
-  --color-brand-50: #fbf5e8;
-  --color-brand-100: #efe0bd;
-  --color-brand-200: #e7cd91;
-  --color-brand-300: #d8a848;
-  --color-brand-400: #e4bb66;
-  --color-brand-500: #c29137;
-  --color-brand-600: #9c6c24;
-  --color-brand-700: #75501b;
-  --color-brand-800: #604116;
-  --color-brand-900: #30261a;
-  --color-brand-950: #211b14;
-  --shadow-card: 0 18px 48px rgb(33 27 20 / 18%);
+  --color-ink: #2b3236;
+  --color-ink-soft: #4c606c;
+  --color-paper: #f9f8f7;
+  --color-mist: #f4f6f7;
+  --color-fog: #e7edf0;
+  --color-silver: #d0cbc4;
+  --color-dark-text: #c4d1d8;
+  --color-brand-50: #edf2f4;
+  --color-brand-100: #dce4e8;
+  --color-brand-200: #bfcbd1;
+  --color-brand-300: #d0cbc4;
+  --color-brand-400: #8199a5;
+  --color-brand-500: #5d7b89;
+  --color-brand-600: #37677b;
+  --color-brand-700: #245970;
+  --color-brand-800: #124a60;
+  --color-brand-900: #043b54;
+  --color-brand-950: #101f28;
+  --shadow-card: 0 18px 48px rgb(16 31 40 / 18%);
 }
 html { scroll-padding-top: 6rem; scroll-behavior: smooth; }
 img { max-width: 100%; }
@@ -39,7 +39,7 @@ body {
   font-family: var(--font-body), "Manrope", system-ui, sans-serif;
   caret-color: var(--color-brand-700);
 }
-::selection { background: var(--color-gold); color: var(--color-brand-950); }
+::selection { background: var(--color-silver); color: var(--color-brand-950); }
 h1, h2 { text-wrap: balance; }
 .font-display { font-weight: 400; letter-spacing: -0.025em; }
 :is(h1, h2, h3).font-display { font-weight: 400; }
@@ -65,12 +65,12 @@ h1, h2 { text-wrap: balance; }
 .nav-link:hover::after { transform: scaleX(1); }
 .brand-hero .text-ink { color: var(--color-paper); }
 .brand-hero .text-ink-soft { color: var(--color-dark-text); }
-.brand-hero .text-brand-700 { color: var(--color-gold); }
+.brand-hero .text-brand-700 { color: var(--color-silver); }
 .brand-hero .border-ink\/10 { border-color: rgb(255 255 255 / 15%); }
-.brand-hero a.text-ink:hover { color: var(--color-gold); }
+.brand-hero a.text-ink:hover { color: var(--color-silver); }
 :is(.brand-hero, .brand-assurance, .brand-about, .brand-footer) .primary-button {
-  background: var(--color-gold);
-  border-color: var(--color-gold);
+  background: var(--color-silver);
+  border-color: var(--color-silver);
   color: var(--color-brand-950);
 }
 :is(.brand-hero, .brand-assurance, .brand-about, .brand-footer) .primary-button:hover {
@@ -78,20 +78,21 @@ h1, h2 { text-wrap: balance; }
   border-color: var(--color-brand-100);
 }
 .footer-link { transition: color 180ms ease; }
+.brand-footer .footer-link { display: inline-flex; min-height: 44px; align-items: center; }
 .footer-link:hover { color: white; text-decoration: underline; text-underline-offset: 4px; }
 :focus-visible { outline: 2px solid var(--color-brand-700); outline-offset: 4px; }
-:is(.brand-footer, .bg-brand-950, .bg-brand-900) :focus-visible { outline-color: var(--color-gold); }
+:is(.brand-footer, .bg-brand-950, .bg-brand-900) :focus-visible { outline-color: var(--color-silver); }
 .brand-assurance { background: var(--color-brand-900); border-color: rgb(255 255 255 / 12%); }
 .brand-assurance .text-ink-soft { color: var(--color-dark-text); }
-.brand-assurance .text-brand-700 { color: var(--color-gold); }
+.brand-assurance .text-brand-700 { color: var(--color-silver); }
 .brand-assurance .border-ink\/10 { border-color: rgb(255 255 255 / 15%); }
 .brand-about { background: var(--color-brand-950); color: white; }
 .brand-about .text-ink { color: white; }
 .brand-about .text-ink-soft { color: var(--color-dark-text); }
-.brand-about :is(.text-brand-700, .text-brand-800) { color: var(--color-gold); }
+.brand-about :is(.text-brand-700, .text-brand-800) { color: var(--color-silver); }
 .brand-about .about-wordmark { color: white; }
-.brand-about .about-tenure { color: var(--color-gold); }
-.brand-about .about-link { border-color: var(--color-gold); }
+.brand-about .about-tenure { color: var(--color-silver); }
+.brand-about .about-link { border-color: var(--color-silver); }
 .brand-about .about-link:hover { color: white; }
 .brand-about figcaption { color: var(--color-dark-text); }
 .hero-signature {
@@ -102,8 +103,8 @@ h1, h2 { text-wrap: balance; }
   to { clip-path: inset(0); }
 }
 .brand-footer .text-ink-soft { color: var(--color-dark-text); }
-.brand-footer .text-brand-700 { color: var(--color-gold); }
-.brand-footer .border-ink\/15 { border-color: rgb(222 210 190 / 25%); }
+.brand-footer .text-brand-700 { color: var(--color-silver); }
+.brand-footer .border-ink\/15 { border-color: rgb(196 209 216 / 25%); }
 .contact-handle { overflow-wrap: anywhere; }
 .contact-handle svg { flex-shrink: 0; }
 ::-webkit-scrollbar { width: 9px; }
@@ -122,10 +123,12 @@ h1, h2 { text-wrap: balance; }
 }
 
 .brand-header .nav-link { color: var(--color-brand-100); }
-.brand-header .nav-link:hover { color: var(--color-gold); }
-.brand-header .nav-link::after { background: var(--color-gold); }
-.brand-header .primary-button { background: var(--color-gold); border-color: var(--color-gold); color: var(--color-ink); }
+.brand-header .nav-link:hover { color: var(--color-silver); }
+.brand-header .nav-link::after { background: var(--color-silver); }
+.brand-header .primary-button { background: var(--color-silver); border-color: var(--color-silver); color: var(--color-ink); }
 .brand-header .primary-button:hover { background: var(--color-brand-100); border-color: var(--color-brand-100); }
-.brand-header :focus-visible { outline-color: var(--color-gold); }
-.hero-portraits { padding-top: 2rem; }
-.hero-portraits img:first-child { transform: translateY(-2rem); }
+.brand-header :focus-visible { outline-color: var(--color-silver); }
+#mobile-navigation :focus-visible { outline-color: var(--color-brand-700); }
+
+
+.brand-hero { background: var(--color-brand-900); }
