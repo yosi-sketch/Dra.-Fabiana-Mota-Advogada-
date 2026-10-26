@@ -84,8 +84,8 @@ function Heading({
       <h2
         className={
           light
-            ? "font-display text-[2rem] leading-[1.18] tracking-[-0.025em] text-white sm:text-[2.5rem] lg:text-[3rem]"
-            : "font-display text-[2rem] leading-[1.18] tracking-[-0.025em] text-ink sm:text-[2.5rem] lg:text-[3rem]"
+            ? "section-heading font-display text-[2rem] leading-[1.18] tracking-[-0.025em] text-white sm:text-[2.5rem] lg:text-[3rem]"
+            : "section-heading font-display text-[2rem] leading-[1.18] tracking-[-0.025em] text-ink sm:text-[2.5rem] lg:text-[3rem]"
         }
       >
         {children}
@@ -94,8 +94,8 @@ function Heading({
         <p
           className={
             light
-              ? "mt-5 max-w-xl text-[15px] leading-7 text-brand-100"
-              : "mt-5 max-w-xl text-[15px] leading-7 text-ink-soft"
+              ? "section-description mt-5 max-w-xl text-[15px] leading-7 text-brand-100"
+              : "section-description mt-5 max-w-xl text-[15px] leading-7 text-ink-soft"
           }
         >
           {description}
@@ -156,7 +156,7 @@ export default function Home() {
     <MotionConfig reducedMotion="user">
       <main className="bg-mist text-ink">
         <div ref={contentRef}>
-        <a href="#inicio" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-none focus:bg-white focus:p-4 focus:text-ink">Ir para o conteúdo</a>
+        <a href="#inicio" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-2xl focus:bg-white focus:p-4 focus:text-ink">Ir para o conteúdo</a>
         <header className="brand-header sticky top-0 z-40 border-b border-white/15 bg-brand-950 text-white">
           <div className="mx-auto flex h-[88px] max-w-7xl items-center justify-between gap-5 px-5 sm:h-[96px] sm:px-8 lg:px-12">
             <a
@@ -201,7 +201,7 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="WhatsApp da Dra. Fabiana Mota"
-                className="grid size-11 place-items-center border border-silver/40 text-silver transition-colors hover:bg-brand-900"
+                className="grid size-11 place-items-center rounded-full border border-silver/40 text-silver transition-colors hover:bg-brand-900"
               >
                 <WhatsAppMark size={17} strokeWidth={1.7} />
               </a>
@@ -209,7 +209,6 @@ export default function Home() {
                 href={whatsapp}
                 target="_blank"
                 size="sm"
-                className="rounded-none"
               >
                 WhatsApp <ArrowUpRight size={14} />
               </PrimaryButton>
@@ -219,7 +218,7 @@ export default function Home() {
               aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
               aria-expanded={menuOpen}
               aria-controls="mobile-navigation"
-              className="grid size-11 shrink-0 place-items-center border border-silver/40 text-silver lg:hidden"
+              className="grid size-11 shrink-0 place-items-center rounded-full border border-silver/40 text-silver transition-colors lg:hidden"
               onClick={() => setMenuOpen((open) => !open)}
             >
               {menuOpen ? <X size={20} /> : <Menu size={20} />}
@@ -254,7 +253,7 @@ export default function Home() {
                     </a>
                   ))}
                   <a
-                    className="mt-3 inline-flex items-center justify-center gap-2 rounded-none bg-silver px-5 py-3.5 text-sm font-semibold text-brand-950"
+                    className="mt-3 inline-flex items-center justify-center gap-2 rounded-full bg-silver px-5 py-3.5 text-sm font-semibold text-brand-950"
                     href={whatsapp}
                     target="_blank"
                     rel="noreferrer"
@@ -270,9 +269,9 @@ export default function Home() {
 
         <section
           id="inicio"
-          className="brand-hero relative isolate overflow-hidden scroll-mt-28 border-b border-white/15 bg-brand-950"
+          className="brand-hero relative isolate overflow-hidden scroll-mt-28 border-b border-ink/10"
         >
-          <div className="mx-auto grid min-h-[560px] max-w-7xl items-center gap-12 px-5 py-12 sm:px-8 sm:py-16 lg:min-h-[620px] lg:grid-cols-[1.05fr_0.95fr] lg:gap-14 lg:px-12 lg:py-12">
+          <div className="mx-auto grid min-h-[600px] max-w-7xl items-center gap-12 px-5 py-12 sm:px-8 sm:py-16 lg:min-h-[700px] lg:grid-cols-[1.12fr_0.88fr] lg:gap-14 lg:px-12 lg:py-12">
             <motion.div
               initial={false}
               animate="visible"
@@ -281,32 +280,31 @@ export default function Home() {
             >
               <motion.h1
                 variants={reveal}
-                className="max-w-[720px] font-display text-[2.25rem] leading-[1.18] tracking-[-0.025em] text-ink sm:text-[3rem] lg:text-[3.5rem]"
+                className="hero-title max-w-[720px] font-display text-[2.25rem] leading-[1.18] tracking-[-0.025em] text-ink sm:text-[3rem] lg:text-[3.5rem]"
               >
                 Seu direito começa
-                <span className="block text-silver">com informação.</span>
+                <span className="hero-title-emphasis block">com informação.</span>
               </motion.h1>
               <motion.p
                 variants={reveal}
-                className="mt-7 max-w-xl text-[15px] leading-7 text-ink-soft sm:text-base sm:leading-8"
+                className="hero-copy mt-7 max-w-xl text-[15px] leading-7 text-ink-soft sm:text-base sm:leading-8"
               >
                 Aposentadoria, benefícios e pensão. Com a Dra. Fabiana Mota, você encontra orientação previdenciária com clareza e atenção à sua história, em Araxá, MG.
               </motion.p>
               <motion.div
                 variants={reveal}
-                className="mt-9 flex flex-col items-start gap-4 sm:flex-row sm:items-center"
+                className="hero-actions mt-9 flex flex-col items-start gap-4 sm:flex-row sm:items-center"
               >
                 <PrimaryButton
                   href={whatsapp}
                   target="_blank"
                   size="lg"
-                  className="rounded-none"
                 >
                   <WhatsAppMark size={17} /> Fale com a Dra. Fabiana
                 </PrimaryButton>
                 <a
                   href="#atuacao"
-                  className="group inline-flex items-center gap-2 px-1 py-3 text-sm font-medium text-ink transition-colors hover:text-brand-700"
+                  className="hero-secondary-link group inline-flex items-center gap-2 px-1 py-3 text-sm font-medium text-ink transition-colors hover:text-brand-700"
                 >
                   Áreas de atuação{" "}
                   <ArrowRight
@@ -317,7 +315,7 @@ export default function Home() {
               </motion.div>
               <motion.div
                 variants={reveal}
-                className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-ink/10 pt-5 text-xs text-ink-soft"
+                className="hero-meta mt-9 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-ink/10 pt-5 text-xs text-ink-soft"
               >
                 <span className="inline-flex items-center gap-2">
                   <MapPin size={15} className="text-brand-700" />
@@ -332,10 +330,12 @@ export default function Home() {
                 </a>
               </motion.div>
             </motion.div>
-            <motion.div initial={false} animate={{ opacity: 1 }} className="relative mx-auto w-full max-w-[310px] lg:ml-auto lg:mr-6">
+            <motion.div initial={false} animate={{ opacity: 1 }} className="hero-portrait relative mx-auto w-full max-w-[340px] lg:ml-auto lg:mr-6 lg:max-w-[390px]">
               <figure className="hero-signature">
-                <Image src={brand.portrait} alt="Dra. Fabiana Mota em seu escritório" width={1170} height={2080} preload sizes="(max-width: 350px) 88vw, 310px" className="h-auto w-full" />
-                <figcaption className="mt-5 flex flex-col gap-2 border-t border-silver/40 pt-5 text-left leading-6 text-brand-100">
+                <div className="hero-portrait-frame">
+                  <Image src={brand.portrait} alt="Dra. Fabiana Mota em seu escritório" width={1170} height={2080} preload sizes="(max-width: 350px) 88vw, (max-width: 1024px) 340px, 390px" className="h-auto w-full" />
+                </div>
+                <figcaption className="hero-caption mt-5 flex flex-col gap-2 border-t border-silver/40 pt-5 text-left leading-6 text-brand-100">
                   <span className="font-display text-2xl text-silver">Dra. Fabiana Mota</span>
                   <span className="text-xs leading-6">Advogada Previdenciária · Araxá, MG</span>
                 </figcaption>
@@ -401,7 +401,7 @@ export default function Home() {
               whileInView="visible"
               viewport={{ once: true, amount: 0.12 }}
               variants={stagger}
-              className="mt-12 divide-y divide-ink/15 border-y border-ink/15"
+              className="service-list mt-12 divide-y divide-ink/15 border-y border-ink/15"
             >
               {areas.map((area) => {
                 const Icon = area.icon;
@@ -409,10 +409,10 @@ export default function Home() {
                   <motion.article
                     key={area.title}
                     variants={reveal}
-                    className="group grid items-start gap-5 py-8 sm:grid-cols-[48px_1fr_auto] sm:gap-7 sm:py-9"
+                    className="service-row group grid items-start gap-5 py-8 sm:grid-cols-[48px_1fr_auto] sm:gap-7 sm:py-9"
                   >
                     <div className="flex items-start justify-between">
-                      <span className="grid size-12 place-items-center rounded-none border border-ink/20 text-ink">
+                      <span className="service-icon grid size-12 place-items-center rounded-full border border-ink/20 text-ink">
                         <Icon size={21} strokeWidth={1.5} />
                       </span>
                     </div>
@@ -420,7 +420,7 @@ export default function Home() {
                     <h3 className="max-w-xl font-display text-[1.55rem] sm:text-[1.8rem] leading-tight text-ink">
                       {area.title}
                     </h3>
-                    <p className="mt-3 max-w-xl text-[13px] leading-6 text-ink-soft">
+                    <p className="service-copy mt-3 max-w-xl text-[13px] leading-6 text-ink-soft">
                       {area.summary}
                     </p>
                     </div>
@@ -429,7 +429,7 @@ export default function Home() {
                       onClick={() => setActiveArea(area)}
                       aria-haspopup="dialog"
                       aria-label={`Saiba mais sobre ${area.title.toLowerCase()}`}
-                      className="group/link inline-flex min-h-11 w-fit items-center gap-2 text-xs font-semibold text-brand-800 hover:text-brand-700 sm:self-center focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-700"
+                      className="service-action group/link inline-flex min-h-11 w-fit items-center gap-2 text-sm font-semibold text-brand-800 hover:text-brand-700 sm:self-center focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-700"
                     >
                       Saiba mais{" "}
                       <ArrowRight
@@ -453,8 +453,8 @@ export default function Home() {
             </figure>
             <div>
               <Heading>Uma história de trabalho merece{" "}<span className="text-brand-700">ser ouvida.</span></Heading>
-              <p className="mt-6 max-w-xl text-[15px] leading-7 text-ink-soft">A Dra. Fabiana Mota é advogada especialista em Direito Previdenciário, em Araxá, Minas Gerais. Sua atuação é voltada à orientação de pessoas e famílias em questões de aposentadoria, benefícios e pensão.</p>
-              <p className="mt-4 max-w-xl text-[15px] leading-7 text-ink-soft">Cada trajetória tem suas particularidades. Por isso, o atendimento começa pela escuta e pela análise dos documentos, com explicações acessíveis para que você compreenda as possibilidades e os próximos passos.</p>
+              <p className="about-copy mt-6 max-w-xl text-[15px] leading-7 text-ink-soft">A Dra. Fabiana Mota é advogada especialista em Direito Previdenciário, em Araxá, Minas Gerais. Sua atuação é voltada à orientação de pessoas e famílias em questões de aposentadoria, benefícios e pensão.</p>
+              <p className="about-copy mt-4 max-w-xl text-[15px] leading-7 text-ink-soft">Cada trajetória tem suas particularidades. Por isso, o atendimento começa pela escuta e pela análise dos documentos, com explicações acessíveis para que você compreenda as possibilidades e os próximos passos.</p>
               <div className="mt-7 flex flex-col items-start gap-2 border-t border-silver/30 pt-5">
                 <a href={brand.instagram} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-3 text-sm text-silver underline-offset-4 hover:underline">Conheça a Dra. Fabiana no Instagram<ArrowUpRight size={15} aria-hidden="true" /></a>
               </div>
@@ -463,7 +463,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="relative overflow-hidden border-t border-white/10 bg-brand-900 py-20 text-white sm:py-28 lg:py-32">
+        <section className="journey-section relative overflow-hidden border-t border-white/10 bg-brand-900 py-20 text-white sm:py-28 lg:py-32">
           <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[0.86fr_1.14fr] lg:gap-20 lg:px-12">
             <Heading
 
@@ -500,8 +500,8 @@ export default function Home() {
                   className="py-6 first:pt-0 sm:py-7"
                 >
                   <div>
-                    <h3 className="font-display text-2xl">{title}</h3>
-                    <p className="mt-2 max-w-lg text-[13px] leading-6 text-brand-100">
+                    <h3 className="journey-title font-display text-2xl">{title}</h3>
+                    <p className="journey-copy mt-2 max-w-lg text-[13px] leading-6 text-brand-100">
                       {description}
                     </p>
                   </div>
@@ -511,9 +511,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-fog py-20 sm:py-24" aria-labelledby="questions-title">
+        <section className="faq-section bg-fog py-20 sm:py-24" aria-labelledby="questions-title">
           <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20 lg:px-12">
-            <h2 id="questions-title" className="font-display text-3xl leading-tight text-ink sm:text-4xl">Antes da nossa primeira conversa.</h2>
+            <h2 id="questions-title" className="section-heading font-display text-3xl leading-tight text-ink sm:text-4xl">Antes da nossa primeira conversa.</h2>
             <div className="divide-y divide-ink/15 border-y border-ink/15">
               {[
                 ["Como funciona o primeiro contato?", `Envie uma mensagem pelo WhatsApp ou ligue para ${brand.phone}. Conte brevemente sua situação para receber informações sobre o atendimento e os documentos iniciais necessários.`],
@@ -522,21 +522,21 @@ export default function Home() {
                 ["Quais documentos devo separar?", "Os documentos variam conforme a situação. Documentos pessoais e registros relacionados à sua demanda podem ajudar na análise. No agendamento, você receberá orientação sobre o que apresentar para o seu caso."],
               ].map(([question, answer]) => (
                 <details key={question} className="group py-6">
-                  <summary className="min-h-11 cursor-pointer text-base font-semibold text-ink marker:text-brand-700">{question}</summary>
-                  <p className="mt-4 max-w-xl text-sm leading-7 text-ink-soft">{answer}</p>
+                  <summary className="faq-question min-h-11 cursor-pointer text-base font-semibold text-ink marker:text-brand-700">{question}</summary>
+                  <p className="faq-answer mt-4 max-w-xl text-sm leading-7 text-ink-soft">{answer}</p>
                 </details>
               ))}
             </div>
           </div>
         </section>
 
-        <section id="avaliacoes" className="scroll-mt-24 bg-paper py-20 sm:py-24">
+        <section id="avaliacoes" className="reviews-section scroll-mt-24 bg-paper py-20 sm:py-24">
           <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
             <div className="grid items-center gap-10 lg:grid-cols-[1fr_0.8fr] lg:gap-24">
             <Heading description="Atenção, clareza e acolhimento nos relatos de quem conhece o escritório. Leia algumas experiências compartilhadas por clientes no Google.">
               Confiança construída <span className="text-brand-700">no atendimento.</span>
             </Heading>
-            <div className="border-y border-ink/15 py-8">
+            <div className="google-rating border-y border-ink/15 py-8">
               <h3 className="font-display text-2xl text-ink">Dra. Fabiana Mota no Google</h3>
               <p className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm leading-7 text-ink">
                 <span className="inline-flex items-center gap-2 font-semibold"><Star size={17} fill="currentColor" className="text-brand-700" aria-hidden="true" />{brand.googleRating.toFixed(1).replace(".", ",")} de 5</span>
@@ -547,21 +547,21 @@ export default function Home() {
             </div>
             <div className="mt-12 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-10">
               {googleReviews.map((review) => (
-                <figure key={review.author} className="flex min-w-0 flex-col gap-6 border-t border-ink/15 py-8 sm:py-9">
-                  <blockquote className="flex-1 text-base leading-8 text-ink">
+                <figure key={review.author} className="review-card flex min-w-0 flex-col gap-6 py-8 sm:py-9">
+                  <blockquote className="review-copy flex-1 text-base leading-8 text-ink">
                     <p>“{review.excerpt}”</p>
                   </blockquote>
-                  <figcaption className="text-sm font-semibold leading-6 text-brand-700">{review.author}</figcaption>
+                  <figcaption className="review-author text-sm font-semibold leading-6 text-brand-700">{review.author}</figcaption>
                 </figure>
               ))}
             </div>
-            <p className="border-t border-ink/15 pt-5 text-xs leading-6 text-ink-soft">Trechos selecionados de avaliações no Google. Nota e quantidade registradas em {brand.googleReviewsProvidedOn}. Consulte os relatos completos e os dados atuais no perfil.</p>
+            <p className="review-note border-t border-ink/15 pt-5 text-xs leading-6 text-ink-soft">Trechos selecionados de avaliações no Google. Nota e quantidade registradas em {brand.googleReviewsProvidedOn}. Consulte os relatos completos e os dados atuais no perfil.</p>
           </div>
         </section>
 
         <section
           id="contato"
-          className="scroll-mt-24 bg-mist py-20 sm:py-28 lg:py-32"
+          className="contact-section scroll-mt-24 bg-mist py-20 sm:py-28 lg:py-32"
         >
           <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20 lg:px-12">
             <div>
@@ -577,7 +577,6 @@ export default function Home() {
                   href={whatsapp}
                   target="_blank"
                   size="lg"
-                  className="rounded-none"
                 >
                   <WhatsAppMark size={17} /> Fale com a Dra. Fabiana
                 </PrimaryButton>
@@ -585,10 +584,10 @@ export default function Home() {
                 <a href={brand.instagram} target="_blank" rel="noopener noreferrer" className="contact-handle inline-flex min-h-11 max-w-full items-center gap-2 py-2 text-sm text-brand-700 hover:text-brand-800"><Camera size={16} /> {brand.instagramHandle}</a>
               </div>
             </div>
-            <div className="relative overflow-hidden border border-ink/10 bg-white p-7 sm:p-10">
+            <div className="contact-card relative overflow-hidden border border-ink/10 bg-white p-7 sm:p-10">
               <div className="absolute right-0 top-0 h-1 w-28 bg-brand-600" />
               <div className="flex items-center gap-4">
-                <span className="grid size-12 place-items-center rounded-none bg-brand-50 text-brand-700">
+                <span className="contact-icon grid size-12 place-items-center rounded-2xl bg-brand-50 text-brand-700">
                   <MapPin size={21} strokeWidth={1.6} />
                 </span>
                 <div>
@@ -608,7 +607,7 @@ export default function Home() {
                   href={maps}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex min-h-11 items-center gap-2 rounded-none border border-ink/15 px-5 py-3 text-xs font-semibold uppercase tracking-[0.13em] text-ink transition-colors hover:border-brand-700 hover:text-brand-700"
+                  className="map-link inline-flex min-h-11 items-center gap-2 rounded-full border border-ink/15 px-5 py-3 text-xs font-semibold uppercase tracking-[0.13em] text-ink transition-colors hover:border-brand-700 hover:text-brand-700"
                 >
                   Ver no Google Maps <ArrowUpRight size={14} />
                 </a>
@@ -617,10 +616,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="border-b border-white/15 bg-brand-950 px-5 py-14 text-white sm:px-8 sm:py-16 lg:px-12">
+        <section className="closing-cta-section border-b border-white/15 bg-brand-950 px-5 py-14 text-white sm:px-8 sm:py-16 lg:px-12">
           <div className="mx-auto flex max-w-7xl flex-col justify-between gap-7 sm:flex-row sm:items-center">
             <div>
-              <h2 className="mt-3 max-w-2xl font-display text-3xl leading-tight sm:text-4xl">
+              <h2 className="closing-title mt-3 max-w-2xl font-display text-3xl leading-tight sm:text-4xl">
                 O primeiro passo é conversar.
               </h2>
             </div>
@@ -628,7 +627,7 @@ export default function Home() {
               href={whatsapp}
               target="_blank"
               rel="noreferrer"
-              className="group inline-flex w-fit shrink-0 items-center gap-3 rounded-none bg-white px-6 py-4 text-xs font-semibold uppercase tracking-[0.14em] text-brand-800 transition-transform hover:-translate-y-0.5"
+              className="closing-cta group inline-flex w-fit shrink-0 items-center gap-3 rounded-full bg-white px-6 py-4 text-sm font-semibold uppercase tracking-[0.08em] text-brand-800 transition-transform hover:-translate-y-0.5"
             >
               Fale pelo WhatsApp <ArrowUpRight size={15} />
             </a>
@@ -707,6 +706,16 @@ export default function Home() {
           </div>
         </footer>
 
+        <a
+          href={whatsapp}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Converse com a Dra. Fabiana pelo WhatsApp"
+          className="floating-whatsapp"
+        >
+          <WhatsAppMark size={25} strokeWidth={1.8} />
+          <span className="floating-whatsapp-label" aria-hidden="true">Fale pelo WhatsApp</span>
+        </a>
         </div>
         <AnimatePresence>
           {activeArea && (
@@ -728,13 +737,13 @@ export default function Home() {
                 exit={{ opacity: 0, y: 16, scale: 0.99 }}
                 transition={{ duration: 0.24 }}
                 onClick={(event) => event.stopPropagation()}
-                className="relative max-h-[90dvh] w-full overflow-y-auto rounded-t-sm bg-mist p-7 shadow-card sm:max-w-xl sm:rounded-none sm:p-10"
+                className="service-dialog relative max-h-[90dvh] w-full overflow-y-auto rounded-2xl bg-paper p-7 shadow-card sm:max-w-xl sm:p-10"
               >
                 <button
                   type="button"
                   aria-label="Fechar detalhes do atendimento"
                   onClick={() => setActiveArea(null)}
-                  className="absolute right-5 top-5 grid size-11 place-items-center rounded-none border border-ink/15 text-ink transition-colors hover:text-brand-700"
+                  className="service-dialog-close absolute right-5 top-5 grid size-11 place-items-center rounded-full border border-ink/15 text-ink transition-colors hover:text-brand-700"
                 >
                   <X size={18} />
                 </button>
@@ -754,7 +763,7 @@ export default function Home() {
                       key={topic}
                       className="flex items-start gap-3 text-sm leading-6 text-ink"
                     >
-                      <span className="mt-2 size-1.5 shrink-0 rounded-none bg-brand-700" />
+                      <span className="mt-2 size-1.5 shrink-0 rounded-full bg-brand-700" />
                       {topic}
                     </li>
                   ))}
@@ -763,7 +772,7 @@ export default function Home() {
                   href={whatsappFor(activeArea.title.toLowerCase())}
                   target="_blank"
                   size="md"
-                  className="mt-8 w-full rounded-none sm:w-auto"
+                  className="mt-8 w-full sm:w-auto"
                 >
                   <Phone size={15} /> Conversar sobre este atendimento
                   <ArrowUpRight size={15} />
