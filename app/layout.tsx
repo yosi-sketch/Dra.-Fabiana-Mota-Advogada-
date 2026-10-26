@@ -1,12 +1,13 @@
 import type { Metadata, Viewport } from "next";
-import { Marcellus, Manrope } from "next/font/google";
+import { Cormorant_Garamond, Manrope } from "next/font/google";
 import { brand } from "./lib/brand";
 import "./globals.css";
 
-const displayFont = Marcellus({
+const displayFont = Cormorant_Garamond({
   variable: "--font-display-face",
   subsets: ["latin"],
-  weight: "400",
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 
@@ -54,7 +55,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#043b54",
+  themeColor: "#101f28",
 };
 
 export default function RootLayout({

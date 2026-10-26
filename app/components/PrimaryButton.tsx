@@ -20,13 +20,13 @@ export default function PrimaryButton({
   size = "md",
 }: PrimaryButtonProps) {
   const sizeClasses = {
-    sm: "px-5 py-3 text-xs uppercase tracking-[0.08em]",
+    sm: "px-5 py-3 text-[0.8125rem] uppercase tracking-[0.08em]",
     md: "px-6 py-3.5 text-sm",
-    lg: "px-5 py-4 text-sm sm:px-7 sm:text-base",
+    lg: "px-6 py-4 text-sm sm:px-8 sm:text-base",
   }[size];
 
   const classes =
-    "primary-button inline-flex min-h-11 max-w-full items-center justify-center gap-2 rounded-none border border-brand-800 bg-brand-800 font-semibold text-white transition-colors duration-200 hover:border-brand-700 hover:bg-brand-700 focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-brand-700 " +
+    "primary-button inline-flex min-h-12 max-w-full items-center justify-center gap-2 rounded-full border font-semibold transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-4 " +
     "select-none text-center " +
     sizeClasses +
     " " +

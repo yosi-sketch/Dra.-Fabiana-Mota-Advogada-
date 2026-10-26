@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-19T11:16:18.237Z",
+  "generatedAt": "2026-10-26T15:40:42.000Z",
   "title": "Design System: Dra. Fabiana Mota — Advocacia Previdenciária",
   "extensions": {
     "colorMeta": {
@@ -9,7 +9,7 @@
         "displayName": "Prata do logo",
         "canonical": "#d0cbc4",
         "tonalRamp": [
-          "#f9f8f7",
+          "#fbfaf7",
           "#d0cbc4",
           "#2b3236"
         ]
@@ -23,9 +23,9 @@
           "#2b3236",
           "#4c606c",
           "#c4d1d8",
-          "#e7edf0",
-          "#f4f6f7",
-          "#f9f8f7"
+          "#ebe7df",
+          "#f4f1eb",
+          "#fbfaf7"
         ]
       },
       "brand-900": {
@@ -49,8 +49,8 @@
     },
     "typographyMeta": {
       "display-mobile": {
-        "displayName": "Marcellus",
-        "purpose": "Serifas romanas e proporções próximas do logo, peso400."
+        "displayName": "Cormorant Garamond",
+        "purpose": "Serif editorial de alto contraste nos títulos, com itálico para ênfase."
       },
       "body": {
         "displayName": "Manrope",
@@ -60,7 +60,7 @@
     "shadows": [
       {
         "name": "dialog",
-        "value": "0 18px 48px rgb(16 31 40 / 18%)",
+        "value": "0 18px 48px rgb(16 31 40 / 16%)",
         "purpose": "Separação estrutural do diálogo."
       }
     ],
@@ -102,7 +102,7 @@
       "refersTo": "button-primary",
       "description": "Contato principal sobre superfícies claras.",
       "html": "<button class=\"ds-primary\">Fale com a Dra. Fabiana</button>",
-      "css": ".ds-primary{font-family:var(--font-sans,Manrope,system-ui,sans-serif);min-height:44px;padding:14px 24px;border:1px solid var(--color-brand-800,#124a60);border-radius:0;background:var(--color-brand-800,#124a60);color:#fff;font-size:14px;font-weight:600;cursor:pointer;transition:background .2s}.ds-primary:hover{background:var(--color-brand-700,#245970)}.ds-primary:focus-visible{outline:2px solid var(--color-brand-700,#245970);outline-offset:4px;}"
+      "css": ".ds-primary{font-family:var(--font-sans,Manrope,system-ui,sans-serif);min-height:48px;padding:12px 24px;border:1px solid rgba(255,255,255,.72);border-radius:999px;background:linear-gradient(125deg,#f5f2ec 0%,#d0cbc4 46%,#f6f4ef 100%);background-size:180% 100%;background-position:0 50%;color:#101f28;font-size:14px;font-weight:600;box-shadow:inset 0 1px 0 rgba(255,255,255,.88),0 12px 26px rgba(16,31,40,.18);cursor:pointer;transition:background-position .32s ease,box-shadow .22s ease,transform .22s ease}.ds-primary:hover{background-position:100% 50%;color:#101f28;box-shadow:inset 0 1px 0 rgba(255,255,255,.96),0 16px 32px rgba(16,31,40,.24);transform:translateY(-2px)}.ds-primary:focus-visible{outline:2px solid var(--color-brand-700,#245970);outline-offset:4px;}"
     },
     {
       "name": "Botão em fundo escuro",
@@ -110,7 +110,7 @@
       "refersTo": "button-on-dark",
       "description": "Ação prateada sobre petróleo ou grafite.",
       "html": "<div class=\"ds-dark-surface\"><button class=\"ds-silver\">Fale com a Dra. Fabiana</button></div>",
-      "css": ".ds-dark-surface{padding:24px;background:var(--color-brand-950,#101f28)}.ds-silver{font-family:var(--font-sans,Manrope,system-ui,sans-serif);min-height:44px;padding:16px 20px;background:var(--color-silver,#d0cbc4);color:var(--color-brand-950,#101f28);border:1px solid var(--color-silver,#d0cbc4);border-radius:0;font-size:14px;font-weight:600;cursor:pointer;transition:background .2s}.ds-silver:hover{background:var(--color-brand-100,#dce4e8)}.ds-silver:focus-visible{outline:2px solid var(--color-silver,#d0cbc4);outline-offset:4px}"
+      "css": ".ds-dark-surface{padding:24px;background:var(--color-brand-950,#101f28)}.ds-silver{font-family:var(--font-sans,Manrope,system-ui,sans-serif);min-height:48px;padding:12px 24px;background:linear-gradient(125deg,#f5f2ec 0%,#d0cbc4 46%,#f6f4ef 100%);background-size:180% 100%;background-position:0 50%;color:var(--color-brand-950,#101f28);border:1px solid rgba(255,255,255,.72);border-radius:999px;font-size:14px;font-weight:600;box-shadow:inset 0 1px 0 rgba(255,255,255,.88),0 12px 26px rgba(16,31,40,.18);cursor:pointer;transition:background-position .32s ease,box-shadow .22s ease,transform .22s ease}.ds-silver:hover{background-position:100% 50%;transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.96),0 16px 32px rgba(16,31,40,.24)}.ds-silver:focus-visible{outline:2px solid var(--color-silver,#d0cbc4);outline-offset:4px}"
     },
     {
       "name": "Navegação",
@@ -126,7 +126,7 @@
       "refersTo": "dialog",
       "description": "Superfície de leitura dos diálogos de serviços.",
       "html": "<section class=\"ds-dialog\" aria-label=\"Exemplo de detalhes\"><h2>Aposentadorias</h2><p>Seu histórico de trabalho merece uma análise cuidadosa.</p><a href=\"#contato\">Conversar sobre este atendimento</a></section>",
-      "css": ".ds-dialog{font-family:var(--font-sans,Manrope,system-ui,sans-serif);max-width:576px;padding:28px;background:var(--color-mist,#f4f6f7);color:var(--color-ink,#2b3236);border-radius:4px 4px 0 0;box-shadow:0 18px 48px rgb(16 31 40 / 18%)}.ds-dialog h2{font-family:var(--font-display,Marcellus,Georgia,serif);font-size:1.7rem;font-weight:400;letter-spacing:-.025em;line-height:1.25}.ds-dialog p{font-size:14px;line-height:28px;color:var(--color-ink-soft,#4c606c)}.ds-dialog a{display:inline-flex;align-items:center;min-height:44px;color:var(--color-brand-700,#245970);font-size:14px}.ds-dialog a:hover{text-underline-offset:4px}.ds-dialog a:focus-visible{outline:2px solid var(--color-brand-700,#245970);outline-offset:4px;}"
+      "css": ".ds-dialog{font-family:var(--font-sans,Manrope,system-ui,sans-serif);max-width:576px;padding:28px;background:var(--color-mist,#f4f1eb);color:var(--color-ink,#2b3236);border-radius:16px;box-shadow:0 18px 48px rgb(16 31 40 / 16%)}.ds-dialog h2{font-family:var(--font-display,Georgia,serif);font-size:1.7rem;font-weight:400;letter-spacing:-.025em;line-height:1.25}.ds-dialog p{font-size:14px;line-height:28px;color:var(--color-ink-soft,#4c606c)}.ds-dialog a{display:inline-flex;align-items:center;min-height:44px;color:var(--color-brand-700,#245970);font-size:14px}.ds-dialog a:hover{text-underline-offset:4px}.ds-dialog a:focus-visible{outline:2px solid var(--color-brand-700,#245970);outline-offset:4px;}"
     },
     {
       "name": "Pergunta frequente",
@@ -138,18 +138,18 @@
   ],
   "narrative": {
     "northStar": "Seu direito começa com informação.",
-    "overview": "Prata, grafite e branco extraídos do logo, com petróleo da peça institucional. Marcellus acompanha as serifas romanas; Manrope sustenta a leitura. Imagens reais integrais, formas retas e contraste claro/escuro.",
+    "overview": "Prata e grafite do logo, petróleo institucional e fundos marfim. Cormorant Garamond dá presença editorial aos títulos; Manrope sustenta a leitura. Ações prateadas arredondadas, imagens originais integrais e contraste claro/escuro.",
     "keyCharacteristics": [
       "Logo original integral",
       "Prata e grafite amostrados",
       "Petróleo institucional",
-      "Serifas romanas e leitura clara",
+      "Tipografia editorial e ações prateadas arredondadas",
       "Teclado e movimento reduzido"
     ],
     "rules": [
       {
         "name": "Regra do contraste",
-        "body": "Prata em contexto escuro; petróleo escuro para ações em contexto claro.",
+        "body": "Texto grafite sobre superfícies claras; ações prateadas com texto grafite; prata como destaque em áreas escuras.",
         "section": "colors"
       },
       {
